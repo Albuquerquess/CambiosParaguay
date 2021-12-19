@@ -174,7 +174,7 @@
 			 e turistas que buscam encontrar a melhor cotação para suas compras e vendas em Ciudad del Este,
 			Se você ficou interessado a apoiar esse projeto provendo à disposição inicial de um projeto dita pelo autor Augusto, seja um colaborador!
 		</p>
-        <a href="#" class="cta">chave pix ( cambiosparaguay@gmail.com )</a>
+        <a href="#" class="cta">pix ( cambiosparaguay@gmail.com )</a>
       </div>
     </div>
   </section>
@@ -975,17 +975,45 @@ h2 {
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
+	
+	
+	
+	#header{ 
+		width: 100%
+	}
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+		display: flex;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+    }
 	.cta {
 		font-size: 2.5rem;
 		padding: 20px 60px;
-	}
+	
+    }
 	h1.section-title {
 		font-size: 6rem;
 	}
 
 	/* Hero */
 	#hero h1 {
-		font-size: 7rem;
+		font-size: 8rem;
+		
 	}
 	/* End Hero */
 
@@ -1030,7 +1058,7 @@ h2 {
 		left: -45px;
 		top: 34px;
 		height: 98%;
-		width: 98%;
+		width: 100%;
 		border: 10px solid crimson;
 	}
 	#about .col-right {
@@ -1064,7 +1092,7 @@ h2 {
 	#contact .contact-item {
 		width: 30%;
 		margin: 0;
-		flex-direction: row;
+		flex-direction: column;
 	}
 	#contact .contact-item .icon {
 		height: 100px;
@@ -1075,8 +1103,8 @@ h2 {
 	}
 	#contact .contact-item .contact-info {
 		width: 100%;
-		text-align: left;
-		padding-left: 20px;
+		text-align: center;
+		padding-left: 0px;
 	}
 	/* End contact  */
 }
