@@ -973,10 +973,43 @@ h2 {
 }
 /* End Keyframes */
 
+/* Media Query For smartphones */
+@media only screen and (max-width: 500px) {
+	#hero {
+		width: 100%;
+		background-size: cover; 
+        background-repeat: no-repeat
+	}
+
+	#header .header{
+		width: 80vh
+	}
+
+	#header .nav-list ul {
+		width: 120vw;
+		height: 120vh;
+		left: 115%;
+    }	
+	#about .about .col-left .about-img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 100%;
+		border: 10px solid crimson;
+	}
+	#about .col-right h2 {
+		text-align: left;
+		color: crimson; 
+	}
+	.container {
+    min-height: 100vh;
+	width: 110%;
+
+	}
+}
+	
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
-	
-	
 	
 	#header{ 
 		width: 100%
